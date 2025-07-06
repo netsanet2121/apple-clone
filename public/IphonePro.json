@@ -1,0 +1,58 @@
+[
+  {
+    "product_id": 1,
+    "product_url": "iphone-16",
+    "product_name": "iPhone 16",
+    "Description_id": 1,
+    "Product_id": 1,
+    "Product_brief_description": "iPhone 16 with A18 chip, 6.1\" Super Retina XDR display, and 48MP Fusion camera.",
+    "Product_description": "Next-generation iPhone with advanced computational photography",
+    "Product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-finish-select-202409-61-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723663761234",
+    "Product_link": "/products/iphone-16",
+    "Price_id": 1,
+    "Starting_price": "799.00",
+    "Price_range": "799.00 - 1099.00"
+  },
+  {
+    "product_id": 2,
+    "product_url": "iphone-16-plus",
+    "product_name": "iPhone 16 Plus",
+    "Description_id": 2,
+    "Product_id": 2,
+    "Product_brief_description": "iPhone 16 Plus with A18 chip, 6.7\" Super Retina XDR display, and 48MP Fusion camera.",
+    "Product_description": "Larger display iPhone with powerful performance",
+    "Product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-plus-finish-select-202409-67-teal?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723663767890",
+    "Product_link": "/products/iphone-16-plus",
+    "Price_id": 2,
+    "Starting_price": "899.00",
+    "Price_range": "899.00 - 1199.00"
+  },
+  {
+    "product_id": 3,
+    "product_url": "iphone-16-pro",
+    "product_name": "iPhone 16 Pro",
+    "Description_id": 3,
+    "Product_id": 3,
+    "Product_brief_description": "iPhone 16 Pro with A18 Pro chip, 6.3\" Super Retina XDR display, and 48MP triple camera system.",
+    "Product_description": "Premium iPhone with pro-level performance and camera",
+    "Product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-finish-select-202409-63-deserttitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723663764567",
+    "Product_link": "/products/iphone-16-pro",
+    "Price_id": 3,
+    "Starting_price": "999.00",
+    "Price_range": "999.00 - 1399.00"
+  },
+  {
+    "product_id": 4,
+    "product_url": "iphone-16-pro-max",
+    "product_name": "iPhone 16 Pro Max",
+    "Description_id": 4,
+    "Product_id": 4,
+    "Product_brief_description": "iPhone 16 Pro Max with A18 Pro chip, 6.9\" Super Retina XDR display, and 48MP triple camera system.",
+    "Product_description": "Ultimate iPhone with largest display and best camera",
+    "Product_img": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-16-pro-max-finish-select-202409-69-blacktitanium?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1723663769012",
+    "Product_link": "/products/iphone-16-pro-max",
+    "Price_id": 4,
+    "Starting_price": "1199.00",
+    "Price_range": "1199.00 - 1599.00"
+  }
+]
