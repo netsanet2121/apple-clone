@@ -32,7 +32,10 @@ function Header() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav- Link js-scroll-trigger" to="/iphone">
+                  <Link
+                    className="nav- Link js-scroll-trigger"
+                    to="https://www.apple.com"
+                  >
                     iphone
                   </Link>
                 </li>

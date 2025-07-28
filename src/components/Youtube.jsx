@@ -1,26 +1,31 @@
 import { useState, useEffect } from "react";
-
 import "./Youtube.css";
 
 function Youtube() {
-  const [youTubeVedios, setYouTubeVideos] = useState([]);
+  const [youTubeVideos, setYouTubeVideos] = useState([]);
 
   useEffect(() => {
+    // const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
+    const apiKey = import.meta.env.VITE_YOUTUBE_API_KEY;
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=date&key=AIzaSyChJ012qE6dDkC6gmL4jXh861x6Tiqs5Yw`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCE_M8A5yxnLfW0KghEeajjw&maxResults=8&order=date&key=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setYouTubeVideos(data.items);
+      })
+      .catch((err) => {
+        console.error("Failed to fetch YouTube videos", err);
       });
   }, []);
+
   return (
     <div className="youtubeWrapper row">
-      {youTubeVedios?.map((singleVideo, i) => {
+      {youTubeVideos?.map((singleVideo, i) => {
         let vidId = singleVideo.id.videoId;
         let vidLink = `https://www.youtube.com/watch?v=${vidId}`;
-        let videoWrapper = (
+        return (
           <div key={i} className="col-sm-12 col-md-6 col-lg-6 ">
             <div className="singleVideoWrapper">
               <div className="videoThumbnail">
@@ -47,15 +52,9 @@ function Youtube() {
             </div>
           </div>
         );
-        return videoWrapper;
       })}
     </div>
   );
 }
+
 export default Youtube;
-
-// const APPLE_CHANNEL_ID = 'UCE_M8A5yxnLfW0KghEeajjw'
-// const EVANDADI_CHANNEL_ID = 'UCxA7AzkI2Sndf8S1G5rSkwQ'
-// https://www.googleapis.com/youtube/v3/search?key={YOUR_API_KEY}&channelId={channel_id_here}&part=snippet,id&order=date&maxResults=10
-
-// get channel id: https://commentpicker.com/youtube-channel-id.php

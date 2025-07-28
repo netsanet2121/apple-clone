@@ -6,7 +6,7 @@ function IphonePro() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("/dataa/iphonepro.json")
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch IphonePro products");
         return response.json();

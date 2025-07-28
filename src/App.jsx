@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import IphonePro from "../public/IphonePro.jsx";
+import IphonePro from "./components/IphonePro.jsx";
+
 import Four404 from "./components/Four404.jsx";
 import Home from "./components/Home.jsx";
 import Shared from "./components/Shared.jsx";
